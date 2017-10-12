@@ -391,10 +391,16 @@ ContactMeComponent = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton);", ""]);
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/320.home.component.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/375.home.component.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/425.home.component.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/768.home.component.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1024.home.component.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1440.home.component.css"), "");
 
 // module
-exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Roboto Condensed', sans-serif;\r\n    text-transform: uppercase;\r\n}\r\n\r\n#title {\r\n    margin-bottom: 0px;\r\n    white-space: nowrap;\r\n    font-size: 4em;\r\n}\r\n\r\n#subtitle {\r\n    margin-top: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -407,7 +413,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"title\">thebatclaudio</h1>\n<h2 id=\"subtitle\">Web developer</h2>\n<div class=\"socials\">\n  \n</div>"
+module.exports = "<h1 id=\"title\">Claudio La Barbera</h1>\n<h2 id=\"subtitle\">Web developer</h2>\n<div class=\"socials\">\n\n</div>"
 
 /***/ }),
 
@@ -544,6 +550,96 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
 //# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1024.home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@media only screen and (min-width: 1024px) {\r\n    #title { font-size: 6em}\r\n    #subtitle { font-size: 3.6em}\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1440.home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@media only screen and (min-width: 1440px) {\r\n    #title { font-size: 9em}\r\n    #subtitle { font-size: 4em}\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/320.home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n#title {\r\n    text-transform: uppercase;\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n}\r\n\r\n#subtitle {\r\n    text-transform: lowercase;\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 1.4em;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/375.home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@media only screen and (min-width: 375px) {\r\n    #title { font-size: 2.6em}\r\n    #subtitle { font-size: 2em}\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/425.home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@media only screen and (min-width: 425px) {\r\n    #title { font-size: 3em}\r\n    #subtitle { font-size: 2.2em}\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/768.home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@media only screen and (min-width: 768px) {\r\n    #title { font-size: 5em}\r\n    #subtitle { font-size: 3em}\r\n}", ""]);
+
+// exports
+
 
 /***/ }),
 
