@@ -391,10 +391,10 @@ ContactMeComponent = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rammetto+One);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);", ""]);
 
 // module
-exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Rammetto One', cursive;\r\n    text-transform: uppercase;\r\n}\r\n\r\n#title {\r\n    margin-bottom: 0px;\r\n    white-space: nowrap;\r\n    font-size: 4em;\r\n}\r\n\r\n#subtitle {\r\n    margin-top: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n}", ""]);
+exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Roboto Condensed', sans-serif;\r\n    text-transform: uppercase;\r\n}\r\n\r\n#title {\r\n    margin-bottom: 0px;\r\n    white-space: nowrap;\r\n    font-size: 4em;\r\n}\r\n\r\n#subtitle {\r\n    margin-top: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n}", ""]);
 
 // exports
 
