@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n#title {\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n}\r\n\r\n#subtitle {\r\n    text-transform: lowercase;\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 1.4em;\r\n}", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about-me/about-me.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  about-me works!\n</p>\n"
+module.exports = "<h1 id=\"title\">I'm Claudio La Barbera, a passionate front-end web developer focused on UX and based in Palermo</h1>"
 
 /***/ }),
 
@@ -83,10 +83,10 @@ AboutMeComponent = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton);", ""]);
 
 // module
-exports.push([module.i, "content {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n    overflow: none;\r\n}", ""]);
+exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\ncontent {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n    overflow: none;\r\n}", ""]);
 
 // exports
 
@@ -99,7 +99,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\r\n\r\n<content>\r\n    <router-outlet></router-outlet>\r\n</content>"
+module.exports = "<particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\r\n\r\n<div class=\"borders\"></div>\r\n\r\n<app-menu-component><</app-menu-component>\r\n\r\n<content>\r\n    <router-outlet></router-outlet>\r\n</content>"
 
 /***/ }),
 
@@ -167,7 +167,7 @@ var AppComponent = (function () {
                     "random": false,
                     "anim": {
                         "enable": false,
-                        "speed": 1,
+                        "speed": 1.2,
                         "opacity_min": 0.1,
                         "sync": false
                     }
@@ -274,6 +274,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_me_about_me_component__ = __webpack_require__("../../../../../src/app/about-me/about-me.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contact_me_contact_me_component__ = __webpack_require__("../../../../../src/app/contact-me/contact-me.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__menu_component_menu_component_component__ = __webpack_require__("../../../../../src/app/menu-component/menu-component.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -289,10 +290,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */] },
     { path: 'about-me', component: __WEBPACK_IMPORTED_MODULE_6__about_me_about_me_component__["a" /* AboutMeComponent */] },
-    { path: 'contact-me', component: __WEBPACK_IMPORTED_MODULE_7__contact_me_contact_me_component__["a" /* ContactMeComponent */] },
+    { path: 'contacts', component: __WEBPACK_IMPORTED_MODULE_7__contact_me_contact_me_component__["a" /* ContactMeComponent */] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_8__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
@@ -307,7 +309,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */],
             __WEBPACK_IMPORTED_MODULE_6__about_me_about_me_component__["a" /* AboutMeComponent */],
             __WEBPACK_IMPORTED_MODULE_7__contact_me_contact_me_component__["a" /* ContactMeComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__menu_component_menu_component_component__["a" /* MenuComponentComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
@@ -330,10 +333,10 @@ AppModule = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);", ""]);
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#email, #drop-a-line {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n#email {\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n    font-family: 'Ubuntu Mono', monospace;\r\n}\r\n\r\n#drop-a-line {\r\n    text-transform: lowercase;\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 1.4em;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.socials {\r\n    list-style-type: none;\r\n    text-align: center;\r\n    margin-left: 0px;\r\n    padding-left: 0px;\r\n}\r\n\r\n.socials li a {\r\n    font-family: 'Anton', sans-serif;\r\n    text-transform: uppercase;\r\n    color: white;\r\n    font-size: 1.4em;\r\n    text-decoration: none;\r\n}\r\n\r\n@media only screen and (min-width: 1440px) {\r\n    #title { font-size: 6em}\r\n    #subtitle { font-size: 4em}\r\n}", ""]);
 
 // exports
 
@@ -346,7 +349,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contact-me/contact-me.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  contact-me works!\n</p>\n"
+module.exports = "<h2 id=\"drop-a-line\">Drop a line to</h2>\n<h1 id=\"email\">info[at]thebatclaud.io</h1>\n\n<ul class=\"socials\">\n    <li><a href=\"https://www.facebook.com/thebatclaudio\" target=\"_blank\" title=\"Claudio La Barbera on Facebook\">Facebook</a></li>\n    <li><a href=\"https://www.twitter.com/thebatclaudio\" target=\"_blank\" title=\"Claudio La Barbera on Twitter\">Twitter</a></li>\n    <li><a href=\"https://www.instagram.com/thebatclaudio\" target=\"_blank\" title=\"Claudio La Barbera on Instagram\">Instagram</a></li>\n    <li><a href=\"https://www.github.com/thebatclaudio\" target=\"_blank\" title=\"Claudio La Barbera on Github\">Github</a></li>\n</ul>"
 
 /***/ }),
 
@@ -391,13 +394,12 @@ ContactMeComponent = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton);", ""]);
-exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/320.home.component.css"), "");
-exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/375.home.component.css"), "");
-exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/425.home.component.css"), "");
-exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/768.home.component.css"), "");
-exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1024.home.component.css"), "");
-exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1440.home.component.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/320.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/375.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/425.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/768.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/1024.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/1440.css"), "");
 
 // module
 exports.push([module.i, "", ""]);
@@ -413,7 +415,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"title\">Claudio La Barbera</h1>\n<h2 id=\"subtitle\">Web developer</h2>\n<div class=\"socials\">\n\n</div>"
+module.exports = "<h1 id=\"title\">Claudio La Barbera</h1>\n<h2 id=\"subtitle\">Web developer</h2>"
 
 /***/ }),
 
@@ -450,6 +452,67 @@ HomeComponent = __decorate([
 ], HomeComponent);
 
 //# sourceMappingURL=home.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/menu-component/menu-component.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "a#menu-button {\r\n    background-color: #212121;\r\n    color: #FFF;\r\n    display: block;\r\n    height: 50px;\r\n    width: 50px;\r\n    position: fixed;\r\n    top: 20px;\r\n    left: 20px;\r\n    font-size: 38px;\r\n    text-align: center;\r\n    line-height: 50px;\r\n    z-index: 9999;\r\n    transition: left 300ms, color 300ms;\r\n    cursor: pointer;\r\n}\r\n\r\na#menu-button.opened {\r\n    left: 20px;\r\n    color: #a53232;\r\n    transition: left 300ms, color 300ms;\r\n}\r\n\r\n.menu-wrapper {\r\n    background-color: rgba(33,33,33,0.95);;\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    z-index: 666;\r\n    width: 0;\r\n    height: 0;\r\n    transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    overflow: hidden;\r\n}\r\n\r\n.menu-wrapper.opened {\r\n    width: 100vw;\r\n    height: 100vh;\r\n    transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.menu-wrapper ul.menu-ul {\r\n    margin: 100px 50px;\r\n    list-style-type: none;\r\n    padding-left: 0px;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n.menu-wrapper ul.menu-ul li {\r\n    font-size: 4em;\r\n    text-transform: uppercase;\r\n    opacity: 0;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n}\r\n\r\n.menu-wrapper.opened ul.menu-ul li {\r\n    opacity: 1;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n    transition-delay: 0.4s;\r\n}\r\n\r\n/* Kumya */\r\n.link {\r\n\toutline: none;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\toverflow: hidden;\r\n\tpadding: 10px 20px;\r\n\tline-height: 1;\r\n    color: #FFFFFF;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.link:hover {\r\n\tcolor: #a53232;\r\n}\r\n\r\n.link::after {\r\n\tcontent: '';\r\n\tposition: absolute;\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tz-index: -1;\r\n\tbackground: #a53232;\r\n\t-webkit-transform: translate3d(101%,0,0);\r\n\ttransform: translate3d(101%,0,0);\r\n\ttransition: -webkit-transform 0.5s;\r\n\ttransition: transform 0.5s;\r\n\ttransition: transform 0.5s, -webkit-transform 0.5s;\r\n\ttransition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.link:hover::after {\r\n\t-webkit-transform: translate3d(0,0,0);\r\n\ttransform: translate3d(0,0,0);\r\n}\r\n\r\n.link span {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n}\r\n\r\n.link span::before {\r\n\tcontent: attr(data-letters);\r\n\tposition: absolute;\r\n\tcolor: #fff;\r\n\tleft: 0;\r\n\toverflow: hidden;\r\n\twhite-space: nowrap;\r\n\twidth: 0%;\r\n\ttransition: width 0.5s;\r\n\ttransition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.link:hover span::before {\r\n\twidth: 100%;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/menu-component/menu-component.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<a id=\"menu-button\" [ngClass]=\"{'opened': menuOpened }\" (click)=\"menuOpened = !menuOpened;\">\n  <i class=\"fa fa-bars\" aria-hidden=\"true\"></i>\n</a>\n\n<nav class=\"menu-wrapper\" [ngClass]=\"{'opened': menuOpened }\">\n  <div class=\"icon-list\">\n    <ul class=\"menu-ul\">\n      <li><a routerLink=\"/\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"HOME\">Home</span></a></li>\n      <li><a routerLink=\"/about-me\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"ABOUT ME\">About Me</span></a></li>\n      <li><a routerLink=\"/contacts\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"CONTACTS\">Contacts</span></a></li>\n    </ul>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/menu-component/menu-component.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuComponentComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MenuComponentComponent = (function () {
+    function MenuComponentComponent() {
+    }
+    MenuComponentComponent.prototype.ngOnInit = function () {
+    };
+    return MenuComponentComponent;
+}());
+MenuComponentComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-menu-component',
+        template: __webpack_require__("../../../../../src/app/menu-component/menu-component.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/menu-component/menu-component.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], MenuComponentComponent);
+
+//# sourceMappingURL=menu-component.component.js.map
 
 /***/ }),
 
@@ -553,7 +616,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1024.home.component.css":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/1024.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -568,7 +631,7 @@ exports.push([module.i, "@media only screen and (min-width: 1024px) {\r\n    #ti
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/1440.home.component.css":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/1440.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -583,7 +646,7 @@ exports.push([module.i, "@media only screen and (min-width: 1440px) {\r\n    #ti
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/320.home.component.css":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/320.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -598,7 +661,7 @@ exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    c
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/375.home.component.css":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/375.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -613,7 +676,7 @@ exports.push([module.i, "@media only screen and (min-width: 375px) {\r\n    #tit
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/425.home.component.css":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/425.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -628,7 +691,7 @@ exports.push([module.i, "@media only screen and (min-width: 425px) {\r\n    #tit
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/768.home.component.css":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/768.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
