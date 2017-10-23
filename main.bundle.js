@@ -133,41 +133,29 @@ var AppComponent = (function () {
             'left': 0,
             'right': 0,
             'bottom': 0,
-            'background-color': '#000000'
+            'background-color': '#212121'
         };
         this.myParams = {
             "particles": {
                 "number": {
-                    "value": 149,
+                    "value": 50,
                     "density": {
                         "enable": true,
-                        "value_area": 800
+                        "value_area": 630
                     }
                 },
                 "color": {
-                    "value": "#330000"
+                    "value": "#e86f6f"
                 },
                 "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
+                    "type": "circle"
                 },
                 "opacity": {
                     "value": 0.5,
                     "random": false,
                     "anim": {
                         "enable": false,
-                        "speed": 1.2,
+                        "speed": 1,
                         "opacity_min": 0.1,
                         "sync": false
                     }
@@ -175,71 +163,26 @@ var AppComponent = (function () {
                 "size": {
                     "value": 3,
                     "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
                 },
                 "line_linked": {
-                    "enable": true,
-                    "distance": 200,
-                    "color": "#ff0000",
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
                     "opacity": 0.4,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
                     "speed": 1,
-                    "direction": "none",
+                    "direction": "top-right",
                     "random": false,
                     "straight": false,
                     "out_mode": "out",
                     "bounce": false,
                     "attract": {
                         "enable": false,
-                        "rotateX": 12000,
-                        "rotateY": 7616.207289111233
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "bubble"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 121.81158184520176,
-                        "size": 7.992007992007992,
-                        "duration": 6.983864025791568,
-                        "opacity": 0.162415442460269,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
+                        "rotateX": 600,
+                        "rotateY": 1200
                     }
                 }
             },
