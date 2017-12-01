@@ -86,7 +86,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Aldrich);", ""]);
 
 // module
-exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    margin-left: 90px;\r\n    margin-top: 25px;\r\n} \r\n\r\n#logo span {\r\n    color: rgb(170, 62, 62)\r\n}", ""]);
+exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    margin-left: 90px;\r\n    margin-top: 25px;\r\n} \r\n\r\n#logo span {\r\n    color: #a53232;\r\n}", ""]);
 
 // exports
 
