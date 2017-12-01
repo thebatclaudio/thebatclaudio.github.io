@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#title, #subtitle {\r\n    text-align: center;\r\n    color: #FFFFFF;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n#title {\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 2em;\r\n}\r\n\r\n#subtitle {\r\n    text-transform: lowercase;\r\n    margin: 0px;\r\n    white-space: nowrap;\r\n    font-size: 1.4em;\r\n}", ""]);
+exports.push([module.i, "#page {\r\n    margin: 40px 20px;\r\n}\r\n\r\nh1, h2, h3, ul li {\r\n    text-align: left;\r\n    color: #FFFFFF;\r\n    font-family: 'Aldrich', sans-serif;\r\n    margin: 0px;\r\n}", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about-me/about-me.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"title\">I'm Claudio La Barbera, a passionate front-end web developer focused on UX and based in Palermo</h1>"
+module.exports = "<img src=\"images/superhero.jpg\">\r\n\r\n<div id=\"page\">\r\n    <h1 id=\"title\">I'm Claudio La Barbera</h1>\r\n    <h2 id=\"subtitle\">web developer by day</h2>\r\n    <h3 id=\"third-title\">caped crusader by night</h3>\r\n    <ul id=\"info\">\r\n        <li id=\"location\">fighting crime in <strong>Palermo</strong></li>\r\n        <li id=\"powers\">with the power of <strong>JavaScript</strong> & <strong>PHP</strong></li>\r\n        <li id=\"enemies\">fighting against <strong>impossible things</strong></li>\r\n    </ul>\r\n</div>"
 
 /***/ }),
 
@@ -83,10 +83,10 @@ AboutMeComponent = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Aldrich);", ""]);
 
 // module
-exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\ncontent {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n    overflow: none;\r\n}", ""]);
+exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    margin-left: 90px;\r\n    margin-top: 25px;\r\n} \r\n\r\n#logo span {\r\n    color: rgb(170, 62, 62)\r\n}", ""]);
 
 // exports
 
@@ -99,7 +99,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\r\n\r\n<div class=\"borders\"></div>\r\n\r\n<app-menu-component><</app-menu-component>\r\n\r\n<content>\r\n    <router-outlet></router-outlet>\r\n</content>"
+module.exports = "<particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\r\n\r\n<div class=\"borders\"></div>\r\n\r\n<app-menu-component><</app-menu-component>\r\n\r\n<h1 id=\"logo\">the<span>bat</span>claud.<span>io</span></h1>\r\n\r\n<content>\r\n    <router-outlet></router-outlet>\r\n</content>"
 
 /***/ }),
 
@@ -256,6 +256,25 @@ AppComponent = __decorate([
     })
 ], AppComponent);
 
+function packNumbers(arr) {
+    var packArray = [];
+    var occurrence = 1;
+    for (var i in arr) {
+        if (arr[i] == packArray[packArray.length - 1]) {
+            occurrence++;
+        }
+        else {
+            if (occurrence > 1) {
+                packArray[packArray.length - 1] = packArray[packArray.length - 1].toString() + ':' + occurrence.toString();
+                occurrence = 1;
+            }
+            else {
+                packArray.push(arr[i]);
+            }
+        }
+    }
+    return packArray;
+}
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -402,7 +421,7 @@ exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":fa
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/home/css/1440.css"), "");
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#page {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n    overflow: none;\r\n}", ""]);
 
 // exports
 
@@ -415,7 +434,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"title\">Claudio La Barbera</h1>\n<h2 id=\"subtitle\">Web developer</h2>"
+module.exports = "<div id=\"page\">\n    <h1 id=\"title\">Claudio La Barbera</h1>\n    <h2 id=\"subtitle\">Web developer</h2>\n</div>"
 
 /***/ }),
 
