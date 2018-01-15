@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#page {\r\n    margin: 40px 20px;\r\n}\r\n\r\nh1, h2, h3, ul li {\r\n    text-align: left;\r\n    color: #FFFFFF;\r\n    font-family: 'Aldrich', sans-serif;\r\n    margin: 0px;\r\n}", ""]);
+exports.push([module.i, "#page {\r\n    margin: 40px 20px;\r\n}\r\n\r\np {\r\n    color: #FFFFFF;\r\n    font-family: 'Aldrich', sans-serif;\r\n    font-size: 1.4em;\r\n    text-align: center;\r\n}\r\n\r\nspan.web-developer span.web {\r\n    color: #4CAF50;\r\n}\r\n\r\nspan.web-developer span.developer {\r\n    color: #EC407A;\r\n}\r\n\r\nspan.web-developer {\r\n    background-color: #212121;\r\n    padding: 2px 5px;\r\n    font-family: monospace;\r\n    display: block;\r\n}", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about-me/about-me.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"images/superhero.jpg\">\r\n\r\n<div id=\"page\">\r\n    <h1 id=\"title\">I'm Claudio La Barbera</h1>\r\n    <h2 id=\"subtitle\">web developer by day</h2>\r\n    <h3 id=\"third-title\">caped crusader by night</h3>\r\n    <ul id=\"info\">\r\n        <li id=\"location\">fighting crime in <strong>Palermo</strong></li>\r\n        <li id=\"powers\">with the power of <strong>JavaScript</strong> & <strong>PHP</strong></li>\r\n        <li id=\"enemies\">fighting against <strong>impossible things</strong></li>\r\n    </ul>\r\n</div>"
+module.exports = "<div id=\"page\">\r\n    <p style=\"text-align: center\">I'm <strong>Claudio La Barbera</strong>, <span class=\"web-developer\"><span class=\"web\">web</span> <span class=\"developer\">developer</span></span> based in Palermo.</p>\r\n    <p><strong>I <i class=\"fa fa-heart\" aria-hidden=\"true\"></i> IT</strong><br>since when I was a child</p>\r\n    <p>Now, between <span class=\"web-developer\"><span class=\"web\">commits</span></span> I <i class=\"fa fa-heart\" aria-hidden=\"true\"></i> to play my guitar, read my comic books and watch good films and TV series</p>\r\n</div>"
 
 /***/ }),
 
@@ -86,7 +86,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Aldrich);", ""]);
 
 // module
-exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    margin-left: 90px;\r\n    margin-top: 25px;\r\n} \r\n\r\n#logo span {\r\n    color: #a53232;\r\n}", ""]);
+exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    margin-left: 90px;\r\n    margin-top: 28px;\r\n    font-size: 1.7em;\r\n} \r\n\r\n#logo span {\r\n    color: #a53232;\r\n}", ""]);
 
 // exports
 
@@ -479,10 +479,15 @@ HomeComponent = __decorate([
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/320.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/375.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/425.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/768.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/1024.css"), "");
+exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/1440.css"), "");
 
 // module
-exports.push([module.i, "a#menu-button {\r\n    background-color: #212121;\r\n    color: #FFF;\r\n    display: block;\r\n    height: 50px;\r\n    width: 50px;\r\n    position: fixed;\r\n    top: 20px;\r\n    left: 20px;\r\n    font-size: 38px;\r\n    text-align: center;\r\n    line-height: 50px;\r\n    z-index: 9999;\r\n    transition: left 300ms, color 300ms;\r\n    cursor: pointer;\r\n}\r\n\r\na#menu-button.opened {\r\n    left: 20px;\r\n    color: #a53232;\r\n    transition: left 300ms, color 300ms;\r\n}\r\n\r\n.menu-wrapper {\r\n    background-color: rgba(33,33,33,0.95);;\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    z-index: 666;\r\n    width: 0;\r\n    height: 0;\r\n    transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    overflow: hidden;\r\n}\r\n\r\n.menu-wrapper.opened {\r\n    width: 100vw;\r\n    height: 100vh;\r\n    transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.menu-wrapper ul.menu-ul {\r\n    margin: 100px 50px;\r\n    list-style-type: none;\r\n    padding-left: 0px;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n.menu-wrapper ul.menu-ul li {\r\n    font-size: 4em;\r\n    text-transform: uppercase;\r\n    opacity: 0;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n}\r\n\r\n.menu-wrapper.opened ul.menu-ul li {\r\n    opacity: 1;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n    transition-delay: 0.4s;\r\n}\r\n\r\n/* Kumya */\r\n.link {\r\n\toutline: none;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\toverflow: hidden;\r\n\tpadding: 10px 20px;\r\n\tline-height: 1;\r\n    color: #FFFFFF;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.link:hover {\r\n\tcolor: #a53232;\r\n}\r\n\r\n.link::after {\r\n\tcontent: '';\r\n\tposition: absolute;\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tz-index: -1;\r\n\tbackground: #a53232;\r\n\t-webkit-transform: translate3d(101%,0,0);\r\n\ttransform: translate3d(101%,0,0);\r\n\ttransition: -webkit-transform 0.5s;\r\n\ttransition: transform 0.5s;\r\n\ttransition: transform 0.5s, -webkit-transform 0.5s;\r\n\ttransition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.link:hover::after {\r\n\t-webkit-transform: translate3d(0,0,0);\r\n\ttransform: translate3d(0,0,0);\r\n}\r\n\r\n.link span {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n}\r\n\r\n.link span::before {\r\n\tcontent: attr(data-letters);\r\n\tposition: absolute;\r\n\tcolor: #fff;\r\n\tleft: 0;\r\n\toverflow: hidden;\r\n\twhite-space: nowrap;\r\n\twidth: 0%;\r\n\ttransition: width 0.5s;\r\n\ttransition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.link:hover span::before {\r\n\twidth: 100%;\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -495,7 +500,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/menu-component/menu-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<a id=\"menu-button\" [ngClass]=\"{'opened': menuOpened }\" (click)=\"menuOpened = !menuOpened;\">\n  <i class=\"fa fa-bars\" aria-hidden=\"true\"></i>\n</a>\n\n<nav class=\"menu-wrapper\" [ngClass]=\"{'opened': menuOpened }\">\n  <div class=\"icon-list\">\n    <ul class=\"menu-ul\">\n      <li><a routerLink=\"/\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"HOME\">Home</span></a></li>\n      <li><a routerLink=\"/about-me\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"ABOUT ME\">About Me</span></a></li>\n      <li><a routerLink=\"/contacts\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"CONTACTS\">Contacts</span></a></li>\n    </ul>\n  </div>\n</nav>\n"
+module.exports = "<a id=\"menu-button\" [ngClass]=\"{'opened': menuOpened }\" (click)=\"menuOpened = !menuOpened;\">\n  <i class=\"fa fa-bars\" aria-hidden=\"true\"></i>\n</a>\n\n<nav class=\"menu-wrapper\" [ngClass]=\"{'opened': menuOpened }\">\n  <div class=\"icon-list\">\n    <ul class=\"menu-ul\">\n      <li><a routerLink=\"/\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"HOME\">Home</span></a></li>\n      <li><a routerLink=\"/about-me\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"ABOUT ME\">About Me</span></a></li>\n      <li><a routerLink=\"/contacts\" routerLinkActive=\"active\" (click)=\"menuOpened = !menuOpened;\" class=\"link\"><span data-letters=\"CONTACTS\">Contacts</span></a></li>\n      <li class=\"blog\"><a href=\"https://www.claudiolabarbera.com\" class=\"link\" target=\"_blank\"><span data-letters=\"BLOG\">Blog</span></a></li>\n    </ul>\n    <ul class=\"social-links-ul\">\n      <li><a href=\"https://www.facebook.com/thebatclaudio\" title=\"Claudio La Barbera on Facebook\" target=\"_blank\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n      <li><a href=\"https://www.twitter.com/thebatclaudio\" title=\"Claudio La Barbera on Twitter\" target=\"_blank\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n      <li><a href=\"https://www.instagram.com/thebatclaudio\" title=\"Claudio La Barbera on Instagram\" target=\"_blank\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>\n    </ul>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -719,6 +724,96 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 // module
 exports.push([module.i, "@media only screen and (min-width: 768px) {\r\n    #title { font-size: 5em}\r\n    #subtitle { font-size: 3em}\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/1024.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/1440.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\r\n@media only screen and (min-width: 1440px) {\r\n    a#menu-button {\r\n        background-color: #212121;\r\n        color: #FFF;\r\n        display: block;\r\n        height: 50px;\r\n        width: 50px;\r\n        position: fixed;\r\n        top: 20px;\r\n        left: 20px;\r\n        font-size: 38px;\r\n        text-align: center;\r\n        line-height: 50px;\r\n        z-index: 9999;\r\n        transition: left 300ms, color 300ms;\r\n        cursor: pointer;\r\n    }\r\n\r\n    a#menu-button.opened {\r\n        left: 20px;\r\n        color: #a53232;\r\n        transition: left 300ms, color 300ms;\r\n    }\r\n\r\n    .menu-wrapper {\r\n        background-color: rgba(33,33,33,0.95);;\r\n        position: fixed;\r\n        top: 0px;\r\n        left: 0px;\r\n        z-index: 666;\r\n        width: 0;\r\n        height: 0;\r\n        transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n        transition: width 0.4s, height 0.4s, transform 0.4s;\r\n        transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n        transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n        overflow: hidden;\r\n    }\r\n\r\n    .menu-wrapper.opened {\r\n        width: 100vw;\r\n        height: 100vh;\r\n        transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n        transition: width 0.4s, height 0.4s, transform 0.4s;\r\n        transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n        transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    }\r\n\r\n    .menu-wrapper ul.menu-ul {\r\n        margin: 100px 50px 0px;\r\n        list-style-type: none;\r\n        padding-left: 0px;\r\n        font-family: 'Anton', sans-serif;\r\n    }\r\n\r\n    .menu-wrapper ul.menu-ul li {\r\n        font-size: 4em;\r\n        text-transform: uppercase;\r\n        opacity: 0;\r\n        transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n        transition: opacity 0.4s;\r\n    }\r\n\r\n    .menu-wrapper ul.menu-ul li.blog {\r\n        font-size: 3em;\r\n    }\r\n\r\n    .menu-wrapper.opened ul.menu-ul li {\r\n        opacity: 1;\r\n        transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n        transition: opacity 0.4s;\r\n        transition-delay: 0.4s;\r\n    }\r\n\r\n    /* Kumya */\r\n    .link {\r\n        outline: none;\r\n        text-decoration: none;\r\n        position: relative;\r\n        overflow: hidden;\r\n        padding: 10px 20px;\r\n        line-height: 1;\r\n        color: #FFFFFF;\r\n        display: inline-block;\r\n    }\r\n\r\n    .link:hover {\r\n        color: #a53232;\r\n    }\r\n\r\n    .link::after {\r\n        content: '';\r\n        position: absolute;\r\n        height: 100%;\r\n        width: 100%;\r\n        top: 0;\r\n        right: 0;\r\n        z-index: -1;\r\n        background: #a53232;\r\n        -webkit-transform: translate3d(101%,0,0);\r\n        transform: translate3d(101%,0,0);\r\n        transition: -webkit-transform 0.5s;\r\n        transition: transform 0.5s;\r\n        transition: transform 0.5s, -webkit-transform 0.5s;\r\n        transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    }\r\n\r\n    .link:hover::after {\r\n        -webkit-transform: translate3d(0,0,0);\r\n        transform: translate3d(0,0,0);\r\n    }\r\n\r\n    .link span {\r\n        display: block;\r\n        position: relative;\r\n    }\r\n\r\n    .link span::before {\r\n        content: attr(data-letters);\r\n        position: absolute;\r\n        color: #fff;\r\n        left: 0;\r\n        overflow: hidden;\r\n        white-space: nowrap;\r\n        width: 0%;\r\n        transition: width 0.5s;\r\n        transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    }\r\n\r\n    .link:hover span::before {\r\n        width: 100%;\r\n    }\r\n\r\n    ul.social-links-ul {\r\n        margin: 20px 50px;\r\n        padding-left: 0px;\r\n    }\r\n\r\n    ul.social-links-ul li {\r\n        display: inline-block;\r\n        height: 2.2em;\r\n        width: 2.2em;\r\n        border-radius: 50%;\r\n        background-color: #FFF;\r\n        font-size: 2em;\r\n        text-align: center;\r\n        margin: 0px 5px;\r\n    }\r\n\r\n    ul.social-links-ul li:hover {\r\n        background-color: #a53232;\r\n    }\r\n\r\n    ul.social-links-ul li a:link, ul.social-links-ul li a:active, ul.social-links-ul li a:visited {\r\n        display: block;\r\n        margin-top: 0.5em;\r\n        color: rgba(33,33,33,0.95);\r\n    }\r\n\r\n    ul.social-links-ul li:hover a, ul.social-links-ul li:hover a:hover {\r\n        color: #FFF;\r\n    }\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/320.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "a#menu-button {\r\n    background-color: #212121;\r\n    color: #FFF;\r\n    display: block;\r\n    height: 50px;\r\n    width: 50px;\r\n    position: fixed;\r\n    top: 20px;\r\n    left: 20px;\r\n    font-size: 38px;\r\n    text-align: center;\r\n    line-height: 50px;\r\n    z-index: 9999;\r\n    transition: left 300ms, color 300ms;\r\n    cursor: pointer;\r\n}\r\n\r\na#menu-button.opened {\r\n    left: 20px;\r\n    color: #a53232;\r\n    transition: left 300ms, color 300ms;\r\n}\r\n\r\n.menu-wrapper {\r\n    background-color: rgba(33,33,33,0.95);;\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    z-index: 666;\r\n    width: 0;\r\n    height: 0;\r\n    transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    overflow: hidden;\r\n    transition-delay: 0.4s;\r\n}\r\n\r\n.menu-wrapper.opened {\r\n    width: 100vw;\r\n    height: 100vh;\r\n    transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s;\r\n    transition: width 0.4s, height 0.4s, transform 0.4s, -webkit-transform 0.4s;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.menu-wrapper ul.menu-ul {\r\n    margin: 100px 50px 0px;\r\n    list-style-type: none;\r\n    padding-left: 0px;\r\n    font-family: 'Anton', sans-serif;\r\n}\r\n\r\n.menu-wrapper ul.menu-ul li {\r\n    font-size: 2.4em;\r\n    text-transform: uppercase;\r\n    opacity: 0;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n}\r\n\r\n.menu-wrapper ul.menu-ul li.blog {\r\n    font-size: 1.8em;\r\n}\r\n\r\n.menu-wrapper.opened ul.menu-ul li {\r\n    opacity: 1;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n    transition-delay: 0.4s;\r\n}\r\n\r\n/* Kumya */\r\n.link {\r\n\toutline: none;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\toverflow: hidden;\r\n\tpadding: 10px 20px;\r\n\tline-height: 1;\r\n    color: #FFFFFF;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.link:hover {\r\n\tcolor: #a53232;\r\n}\r\n\r\n.link::after {\r\n\tcontent: '';\r\n\tposition: absolute;\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tz-index: -1;\r\n\tbackground: #a53232;\r\n\t-webkit-transform: translate3d(101%,0,0);\r\n\ttransform: translate3d(101%,0,0);\r\n\ttransition: -webkit-transform 0.5s;\r\n\ttransition: transform 0.5s;\r\n\ttransition: transform 0.5s, -webkit-transform 0.5s;\r\n\ttransition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.link:hover::after {\r\n\t-webkit-transform: translate3d(0,0,0);\r\n\ttransform: translate3d(0,0,0);\r\n}\r\n\r\n.link span {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n}\r\n\r\n.link span::before {\r\n\tcontent: attr(data-letters);\r\n\tposition: absolute;\r\n\tcolor: #fff;\r\n\tleft: 0;\r\n\toverflow: hidden;\r\n\twhite-space: nowrap;\r\n\twidth: 0%;\r\n\ttransition: width 0.5s;\r\n\ttransition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n}\r\n\r\n.link:hover span::before {\r\n\twidth: 100%;\r\n}\r\n\r\nul.social-links-ul {\r\n    margin: 20px 50px;\r\n    padding-left: 0px;\r\n}\r\n\r\n.menu-wrapper ul.social-links-ul li {\r\n    display: inline-block;\r\n    height: 1.8em;\r\n    width: 1.8em;\r\n    border-radius: 50%;\r\n    background-color: #FFF;\r\n    font-size: 2em;\r\n    text-align: center;\r\n    margin: 0px 5px;\r\n    opacity: 0;\r\n}\r\n\r\n.menu-wrapper.opened .social-links-ul li {\r\n    opacity: 1;\r\n    transition-timing-function: cubic-bezier(0.7,0,0.3,1);\r\n    transition: opacity 0.4s;\r\n    transition-delay: 0.4s;\r\n}\r\n\r\nul.social-links-ul li:hover {\r\n    background-color: #a53232;\r\n}\r\n\r\nul.social-links-ul li a:link, ul.social-links-ul li a:active, ul.social-links-ul li a:visited {\r\n    display: block;\r\n    margin-top: 0.3em;\r\n    color: rgba(33,33,33,0.95);\r\n}\r\n\r\nul.social-links-ul li:hover a, ul.social-links-ul li:hover a:hover {\r\n    color: #FFF;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/375.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/425.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/app/menu-component/css/768.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
 
 // exports
 
