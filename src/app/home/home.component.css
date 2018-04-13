@@ -1,0 +1,14 @@
+#page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: none;
+}
+
+@import url('./css/320.css');
+@import url('./css/375.css');
+@import url('./css/425.css');
+@import url('./css/768.css');
+@import url('./css/1024.css');
+@import url('./css/1440.css');

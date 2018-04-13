@@ -1,6 +1,13 @@
 <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
 
-<header>
-    <h1 id="title">thebatclaudio</h1>
-    <h2 id="subtitle">Web developer<br>Caped Crusader</h2>
-</header>
+<div class="borders"></div>
+
+<app-menu-component><</app-menu-component>
+
+<div id="logo-container">
+    <h1 id="logo">the<span>bat</span>claud.<span>io</span></h1>
+</div>
+
+<content>
+    <router-outlet></router-outlet>
+</content>

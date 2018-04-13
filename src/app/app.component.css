@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Anton|Aldrich');
 
-header {
+a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+
+#logo-container {
+    display: block;
     position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: none;
+    background-color: #212121;
+    height: 50px;
+    top: 20px;
+    left: 90px;
+    z-index: 9999;
 }
 
-#title, #subtitle {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'Rammetto One', cursive;
-    text-transform: uppercase;
-}
+#logo {
+    font-family: 'Aldrich', sans-serif;
+    color: #FFF;
+    font-size: 1.7em;
+    margin: 9px 20px;
+    padding: 0px;
+} 
 
-#title {
-    margin-bottom: 0px;
-    white-space: nowrap;
-    font-size: 4em;
-}
-
-#subtitle {
-    margin-top: 0px;
-    white-space: nowrap;
-    font-size: 2em;
+#logo span {
+    color: #a53232;
 }

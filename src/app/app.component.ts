@@ -21,20 +21,20 @@ export class AppComponent {
       'left': 0,
       'right': 0,
       'bottom': 0,
-      'background-color': '#000000'
+      'background-color': '#212121'
     };
 
     this.myParams = {
       "particles": {
         "number": {
-          "value": 149,
+          "value": 50,
           "density": {
             "enable": true,
-            "value_area": 800
+            "value_area": 630
           }
         },
         "color": {
-          "value": "#ffffff"
+          "value": "#e86f6f"
         },
         "shape": {
           "type": "circle",
@@ -73,23 +73,23 @@ export class AppComponent {
         },
         "line_linked": {
           "enable": false,
-          "distance": 2000,
+          "distance": 150,
           "color": "#ffffff",
           "opacity": 0.4,
-          "width": 4
+          "width": 1
         },
         "move": {
           "enable": true,
-          "speed": 2,
-          "direction": "none",
+          "speed": 1,
+          "direction": "top-right",
           "random": false,
           "straight": false,
           "out_mode": "out",
           "bounce": false,
           "attract": {
             "enable": false,
-            "rotateX": 2966,
-            "rotateY": 7616.207289111233
+            "rotateX": 600,
+            "rotateY": 1200
           }
         }
       },
@@ -97,11 +97,11 @@ export class AppComponent {
         "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": true,
-            "mode": "bubble"
+            "enable": false,
+            "mode": "repulse"
           },
           "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "push"
           },
           "resize": true
@@ -114,10 +114,10 @@ export class AppComponent {
             }
           },
           "bubble": {
-            "distance": 121.81158184520176,
-            "size": 7.992007992007992,
-            "duration": 6.983864025791568,
-            "opacity": 0.162415442460269,
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
             "speed": 3
           },
           "repulse": {
@@ -135,4 +135,23 @@ export class AppComponent {
       "retina_detect": true
     };
   }
+}
+
+function packNumbers(arr) {
+  let packArray = [];
+  let occurrence = 1;
+  for(let i in arr) {
+    if(arr[i] == packArray[packArray.length -1]) {
+      occurrence++;
+    } else {
+      if(occurrence > 1) {
+        packArray[packArray.length -1] = packArray[packArray.length -1].toString()+':'+occurrence.toString();
+        occurrence = 1;
+      } else {
+        packArray.push(arr[i]);
+      }
+    }
+  }
+
+  return packArray;
 }
