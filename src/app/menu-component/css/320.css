@@ -79,8 +79,21 @@ a#menu-button.opened {
     transition-delay: 0.4s;
 }
 
+.menu-wrapper ul.social-links-ul {
+    margin-left: 60px;
+}
+
+.social-links-ul li {
+    display: block;
+    float: left;
+}
+
+.social-links-ul li .social-link {
+    padding: 0px 10px;
+}
+
 /* Kumya */
-.link {
+.link, .social-link {
 	outline: none;
 	text-decoration: none;
 	position: relative;
@@ -91,7 +104,7 @@ a#menu-button.opened {
 	display: inline-block;
 }
 
-.link:hover {
+.link:hover, .social-link:hover {
 	color: #a53232;
 }
 

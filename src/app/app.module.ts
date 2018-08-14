@@ -7,7 +7,6 @@ import { ParticlesModule } from 'angular-particle';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MenuComponentComponent } from './menu-component/menu-component.component';
 
@@ -15,7 +14,6 @@ import { MenuComponentComponent } from './menu-component/menu-component.componen
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about-me', component: AboutMeComponent },
-  { path: 'contacts', component: ContactMeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -24,7 +22,6 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     AboutMeComponent,
-    ContactMeComponent,
     PageNotFoundComponent,
     MenuComponentComponent
   ],

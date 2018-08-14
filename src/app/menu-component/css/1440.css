@@ -76,7 +76,7 @@
     }
 
     /* Kumya */
-    .link {
+    .link, .social-link {
         outline: none;
         text-decoration: none;
         position: relative;
@@ -87,7 +87,7 @@
         display: inline-block;
     }
 
-    .link:hover {
+    .link:hover, .social-link:hover {
         color: #a53232;
     }
 
@@ -113,7 +113,7 @@
         transform: translate3d(0,0,0);
     }
 
-    .link span {
+    .link span, .social-link span {
         display: block;
         position: relative;
     }
@@ -134,10 +134,5 @@
 
     .link:hover span::before {
         width: 100%;
-    }
-
-    .social-links-ul li {
-        display: block;
-        float: left;
     }
 }
