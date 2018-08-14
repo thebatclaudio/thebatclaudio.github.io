@@ -36,8 +36,6 @@ span.web-developer {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    width: 50%;
-    margin: 0 25%;
 }
 
 .element:first-child {
@@ -159,88 +157,9 @@ strong.batman-returns span.returns-text {
     font-size: 0.8em;
 }
 
-#daynight {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    top: 0;
-}
-  
-#triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100vh solid rgba(144, 202, 249, 0.5);
-    border-right: 100vw solid transparent;
-}
-
-#sun-moon {
-    position:absolute;
-    top: 90px;
-    left: 20px;
-    border-radius: 100%;
-    width: 90px;
-    height: 90px;
-    border: 5px solid #FFB300;
-    background-color: #FFC107;
-}
-
-div.sunholder {
-    display: inline-block;
-    animation: spin 8s linear 0s infinite;
-}
-div.sun {
-    display: block;
-    height: 50px;
-    width: 50px;
-    background-color: #FFC107;
-    border: 1px solid #FFB300;
-    border-radius: 50%;
-    z-index: 999;
-}
-div.raybase {
-    position: absolute;
-    top: 19px; /*50px/2-6px*/
-    left: 19px; /*(50px-12px)/2*/
-}
-div.ray {
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 12px solid #FFB300;
-    animation: shine 1s linear 0s infinite alternate;
-}
-div.ray1 {
-    transform: translate(28px,0px); /*(50px+6px)/2*/
-}
-div.ray2 {
-    transform: rotate(45deg) translate(28px,0px) ;
-}
-div.ray3 {
-    transform: rotate(90deg) translate(28px,0px) ;
-}
-div.ray4 {
-    transform: rotate(135deg) translate(28px,0px) ;
-}
-div.ray5 {
-    transform: rotate(180deg) translate(28px,0px) ;
-}
-div.ray6 {
-    transform: rotate(225deg) translate(28px,0px) ;
-}
-div.ray7 {
-    transform: rotate(270deg) translate(28px,0px) ;
-}
-div.ray8 {
-    transform: rotate(315deg) translate(28px,0px) ;
-}
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-@keyframes shine {
-    from { transform: translate(0px,0px) }
-    to { transform: translate(5px,0px) }
+@media(min-width: 1024px) {
+    .element {
+        width: 50%;
+        margin: 0 25%;
+    }
 }
