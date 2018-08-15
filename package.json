@@ -23,6 +23,7 @@
     "@angular/router": "^4.2.4",
     "@fortawesome/fontawesome-free": "^5.2.0",
     "angular-particle": "^1.0.4",
+    "aos": "^2.3.3",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"

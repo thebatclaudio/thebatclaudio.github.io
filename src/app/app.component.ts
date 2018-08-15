@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -134,24 +136,7 @@ export class AppComponent {
       },
       "retina_detect": true
     };
-  }
-}
 
-function packNumbers(arr) {
-  let packArray = [];
-  let occurrence = 1;
-  for(let i in arr) {
-    if(arr[i] == packArray[packArray.length -1]) {
-      occurrence++;
-    } else {
-      if(occurrence > 1) {
-        packArray[packArray.length -1] = packArray[packArray.length -1].toString()+':'+occurrence.toString();
-        occurrence = 1;
-      } else {
-        packArray.push(arr[i]);
-      }
-    }
+    AOS.init();
   }
-
-  return packArray;
 }
