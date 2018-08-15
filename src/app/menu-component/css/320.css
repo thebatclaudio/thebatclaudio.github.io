@@ -127,7 +127,8 @@ a#menu-button.opened {
 
 .link span {
 	display: block;
-	position: relative;
+    position: relative;
+    color: #FFF;
 }
 
 .link span::before {
@@ -164,4 +165,8 @@ a#menu-button.opened {
     color: #FFF;
     text-decoration: none;
     font-weight: 800;
+}
+
+.email-address a:hover {
+    color: #a53232;
 }
