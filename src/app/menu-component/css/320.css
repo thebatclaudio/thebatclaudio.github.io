@@ -81,10 +81,11 @@ a#menu-button.opened {
 
 .menu-wrapper ul.social-links-ul {
     margin-left: 60px;
+    font-size: 14px;
 }
 
 .social-links-ul li .social-link {
-    padding: 0px 10px;
+    padding: 0px 7px;
 }
 
 /* Kumya */
@@ -148,7 +149,7 @@ a#menu-button.opened {
 .contact-me {
     display: block;
     color: #FFF;
-    margin: 100px 70px;
+    margin: 70px;
     font-family: 'Aldrich', sans-serif;
     font-size: 1em;
     opacity: 0;
