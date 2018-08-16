@@ -86,7 +86,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Aldrich);", ""]);
 
 // module
-exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo-container {\r\n    display: block;\r\n    position: fixed;\r\n    background-color: #212121;\r\n    height: 50px;\r\n    top: 20px;\r\n    left: 90px;\r\n    z-index: 9999;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    font-size: 25px;\r\n    margin: 12.5px 20px;\r\n    padding: 0px;\r\n} \r\n\r\n#logo span {\r\n    color: #a53232;\r\n}", ""]);
+exports.push([module.i, "a:link, a:hover, a:visited, a:active {\r\n    text-decoration: none;\r\n}\r\n\r\n#logo-container {\r\n    display: block;\r\n    position: fixed;\r\n    background-color: #212121;\r\n    height: 50px;\r\n    top: 20px;\r\n    left: 70px;\r\n    z-index: 9999;\r\n}\r\n\r\n#logo {\r\n    font-family: 'Aldrich', sans-serif;\r\n    color: #FFF;\r\n    font-size: 25px;\r\n    margin: 12.5px 20px;\r\n    padding: 0px;\r\n} \r\n\r\n#logo span {\r\n    color: #a53232;\r\n}", ""]);
 
 // exports
 
