@@ -194,7 +194,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n    margin: 0px;\n    padding: 0px;\n}\n\ncontent {\n    display: block;\n    padding-top: 90px;\n}", ""]);
+exports.push([module.i, "body {\n    margin: 0px;\n    padding: 0px;\n}\n\ncontent {\n    display: block;\n    padding-top: 90px;\n}\n\n.text-uppercase {\n    text-transform: uppercase;\n}", ""]);
 
 // exports
 
