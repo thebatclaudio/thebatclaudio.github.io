@@ -7,3 +7,7 @@ content {
     display: block;
     padding-top: 90px;
 }
+
+.text-uppercase {
+    text-transform: uppercase;
+}
