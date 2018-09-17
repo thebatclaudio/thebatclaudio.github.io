@@ -146,6 +146,10 @@ a#menu-button.opened {
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
+a.blog.link {
+    font-size: 60%;
+}
+
 .contact-me {
     display: block;
     color: #FFF;
