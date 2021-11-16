@@ -113,7 +113,15 @@ span.web-developer {
 }
 
 .element.work-pter .text {
-    background-image: url('/assets/images/workstation-thebatclaudio.jpg');
+    background-image: url('/assets/images/workstation-pter.jpg');
+    padding: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element.work-myfamilyplace .text {
+    background-image: url('/assets/images/workstation-myfamilyplace.jpg');
     padding: 40px;
     background-position: center;
     background-repeat: no-repeat;
