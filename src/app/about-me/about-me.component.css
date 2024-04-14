@@ -128,6 +128,14 @@ span.web-developer {
     background-size: cover;
 }
 
+.element.work-everli .text {
+    background-image: url('/assets/images/workstation-everli.jpg');
+    padding: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .element.university .text {
     background-image: url('/assets/images/university-palermo.png');
     padding: 40px;
